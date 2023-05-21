@@ -9,15 +9,18 @@
 </head>
 <body>
     <div class="header">Etch-a-Sketch</div>
+    <div class="grid"></div>
     <div class="buttons">
-        <button class="btn black">Black</button>
-        <button class="btn rainbow">Rainbow</button>
-        <button class="btn eraser">Eraser</button>
-        <button class="btn pick">Pick</button>
+        <button onclick="changeColor('white')" class="btn" id="white">White</button>
+        <button onclick="changeColor('rainbow')" class="btn" id="rainbow">Rainbow</button>
+        <button onclick="changeColor('black')" class="btn" id="eraser">Eraser</button>
+        <button onclick="pickColor()" class="btn" id="pick">Pick</button>
     </div>
     <div id="grid-container"></div>
+    <div class="end">
+        <button onclick="clearBoard()" class="btn" id="clear">clear</button>
+    </div>
 
-
-    <script src="./logic.js"></script>
+<script src="./logic.js"></script>
 </body>
 </html>

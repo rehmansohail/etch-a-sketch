@@ -1,19 +1,36 @@
 body{
-    
+    background-color: grey;   
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
 }
 .header{
     font-size: 60px;
     color: gold;
+    margin-bottom: 20px;
     
 }
 .buttons{
     margin-bottom: 20px;
+    margin-bottom: 60px;
+    
+
 }
 .btn
 {
     color: white;
     background-color: springgreen;
+    margin: 10px;
+    height: 40px;
+    width: 80px;
+    border-radius: 8px;
+    font-size: 15px;
+
+}
+.end{
+    display: flex;
+    justify-content: flex-start;
 }
 #grid-container {
     display: grid;
@@ -25,8 +42,15 @@ body{
   .box {
     width: 100%;
     height: 100%;
-    background-color: #000; /* Adjust the default box color */
+    background-color: black; /* Adjust the default box color */
   }
+  
+
+  
+  
+  
+  
+  
   
   
   
