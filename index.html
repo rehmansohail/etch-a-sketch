@@ -2,25 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etch-a-Sketch</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div class="header">Etch-a-Sketch</div>
-    <div class="grid"></div>
-    <div class="buttons">
-        <button onclick="changeColor('white')" class="btn" id="white">White</button>
-        <button onclick="changeColor('rainbow')" class="btn" id="rainbow">Rainbow</button>
-        <button onclick="changeColor('black')" class="btn" id="eraser">Eraser</button>
-        <button onclick="pickColor()" class="btn" id="pick">Pick</button>
+    
+    <header class="text">
+        Etch-a-Sketch
+    </header>
+    <div class="body">
+        <div class="text">Select a Color</div>
+        <div class="buttons">
+            <button>Red</button>
+            <button>Erase</button>
+            <button>Random</button>
+            <button>Reset</button>
+        </div>
     </div>
-    <div id="grid-container"></div>
-    <div class="end">
-        <button onclick="clearBoard()" class="btn" id="clear">clear</button>
-    </div>
-
-<script src="./logic.js"></script>
+    <div id="main_container"></div>
+    <script src="./logic.js"></script>
 </body>
 </html>
