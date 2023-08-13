@@ -12,3 +12,9 @@ body{
 .text{
     text-align: center;
 }
+.box{
+    background-color: pink;
+}
+.color{
+    background-color: red;
+}
