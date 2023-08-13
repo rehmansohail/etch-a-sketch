@@ -15,17 +15,25 @@ for(let i=0;i<32;i++){
 
 }
 
-// const box = document.querySelector('.box')
-
-// box.addEventListener('mouseover',()=>{
-//   box.classList.add('color')
-// })
-
-//to color all the boxes
+//to color all boxes
 const smallBoxes = document.querySelectorAll('.box');
 
 [...smallBoxes].forEach(smallBox => {
   smallBox.addEventListener('mouseover', () => {
-      smallBox.classList.add('color');
+      smallBox.classList.add('color')
   });
 })
+
+// const buttons = document.querySelectorAll('button')
+// const buttonsarr = Array.prototype.slice.call(buttons)
+// buttonsarr.forEach(button=>{
+//   button.addEventListener('click',(e)=>{
+//     let elementClass = e.target.className;
+//     [...smallBoxes].forEach(smallBox => {
+//       smallBox.addEventListener('mouseover', () => {
+          
+          
+//       });
+//     })
+//   })
+// })
