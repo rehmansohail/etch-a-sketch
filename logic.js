@@ -18,22 +18,43 @@ for(let i=0;i<32;i++){
 //to color all boxes
 const smallBoxes = document.querySelectorAll('.box');
 
-[...smallBoxes].forEach(smallBox => {
-  smallBox.addEventListener('mouseover', () => {
-      smallBox.classList.add('color')
-  });
-})
-
-// const buttons = document.querySelectorAll('button')
-// const buttonsarr = Array.prototype.slice.call(buttons)
-// buttonsarr.forEach(button=>{
-//   button.addEventListener('click',(e)=>{
-//     let elementClass = e.target.className;
-//     [...smallBoxes].forEach(smallBox => {
-//       smallBox.addEventListener('mouseover', () => {
-          
-          
-//       });
-//     })
-//   })
+// [...smallBoxes].forEach(smallBox => {
+//   smallBox.addEventListener('mouseover', () => {
+//       smallBox.style.backgroundColor='red'           //use camelCase for the color property
+//   });
 // })
+
+const buttons = document.querySelectorAll('button')
+const buttonsarr = Array.prototype.slice.call(buttons)
+buttonsarr.forEach(button=>{
+  button.addEventListener('click',(e)=>{
+    let elementtext = e.target.innerText;
+    console.log(elementtext)
+    if(elementtext==='Red'){
+        [...smallBoxes].forEach(smallBox => {
+      smallBox.addEventListener('mouseover', () => {
+        smallBox.style.backgroundColor='red' 
+          
+      });
+    })
+    }else if(elementtext==='Erase'){
+      [...smallBoxes].forEach(smallBox => {
+        smallBox.addEventListener('mouseover', () => {
+          smallBox.style.backgroundColor='pink' 
+            
+        });
+      })
+    }else if(elementtext==='Random'){
+
+    }
+    else{
+      //reset everything
+    }
+    // [...smallBoxes].forEach(smallBox => {
+    //   smallBox.addEventListener('mouseover', () => {
+          
+          
+    //   });
+    // })
+  })
+})
