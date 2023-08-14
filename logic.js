@@ -62,6 +62,9 @@ colorPicker.addEventListener('input', (event) => {
     }
     else{
       //reset everything
+      [...smallBoxes].forEach(smallBox => {
+          smallBox.style.backgroundColor='pink'
+        })
     }
     // [...smallBoxes].forEach(smallBox => {
     //   smallBox.addEventListener('mouseover', () => {
