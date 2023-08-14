@@ -29,7 +29,7 @@ const buttonsarr = Array.prototype.slice.call(buttons)
 buttonsarr.forEach(button=>{
   button.addEventListener('click',(e)=>{
     let elementtext = e.target.innerText;
-    console.log(elementtext)
+    // console.log(elementtext)
     if(elementtext==='Red'){
         [...smallBoxes].forEach(smallBox => {
       smallBox.addEventListener('mouseover', () => {
@@ -45,7 +45,20 @@ buttonsarr.forEach(button=>{
         });
       })
     }else if(elementtext==='Random'){
+      const colorButton = document.getElementById('colorButton');
+const colorPicker = document.getElementById('colorPicker');
+colorPicker.click();
 
+// Color picker change event listener
+colorPicker.addEventListener('input', (event) => {
+  const selectedColor = event.target.value;
+  [...smallBoxes].forEach(smallBox => {
+    smallBox.addEventListener('mouseover', () => {
+      smallBox.style.backgroundColor=`${selectedColor}` 
+        
+    });
+  })
+});
     }
     else{
       //reset everything
